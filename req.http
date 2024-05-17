@@ -1,0 +1,50 @@
+###regist admin Dibuat di database/di http request
+POST http://localhost:9000/api/auth/admin/register
+Content-Type: application/json
+
+{
+    "idAdmin":"string",
+    "password":"string>6"
+}
+###login admin
+POST http://localhost:9000/api/auth/admin/login
+Content-Type: application/json
+
+{
+    "idAdmin":"string",
+    "password":"string>6"
+}
+
+###car
+POST http://localhost:9000/api/cars/add
+Content-Type: application/json
+Authorization: Bearer Token
+{
+  "name": "string",
+  "price": "string",
+  "image": "file png,jpg,jpeg"
+}
+
+###delete
+DELETE http://localhost:9000/api/cars/delete/{id}
+Authorization: Bearer Token
+
+###update
+PUT http://localhost:9000/api/cars/edit/{id}
+Content-Type: application/json
+Authorization: Bearer Token
+
+{
+  "name": "string",
+  "price": "string",
+  "image": "file png,jpg,jpeg"
+}
+
+###GET by type, small, medium, large
+GET http://localhost:9000/api/cars/show/type/{carType}
+
+###Get all
+GET http://localhost:9000/api/cars/show
+
+###GET BY ID
+GET http://localhost:9000/api/cars/show/{id}
