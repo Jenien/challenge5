@@ -1,12 +1,9 @@
-# Instalasi dan Konfigurasi Prisma
+# Instalasi 
 
-Berikut adalah langkah-langkah untuk menginstal dan mengkonfigurasi Prisma:
+Berikut adalah langkah-langkah untuk menjalankan tugasnya
 
 1. **Instal package.json**
 2. **Inisiasi Prisma** 
-    ```bash
-    npx prisma init
-    ```
 3. **Generate Prisma** 
     ```bash
     npx prisma generate
